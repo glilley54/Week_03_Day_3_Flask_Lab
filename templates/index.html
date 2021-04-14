@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>
+            {{title}} - Order List
+        </title>
+    </head>
+    <body>
+        <h1>Our Order List</h1>
+        {% for order in orders %}
+        <div>
+            <a href="/order/<index>">{{order.customer_name}}</a>            
+        </div>
+        {%endfor%}
+    </body>
+</html>
